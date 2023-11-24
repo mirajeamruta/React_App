@@ -4,7 +4,7 @@ import { ProgressBar } from "react-bootstrap";
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
-
+import { Link } from 'react-router-dom';
 function Home() {
   const [isMobile, setIsMobile] = useState(false);
 
@@ -28,13 +28,12 @@ function Home() {
   };
   return (
     <>
-      <div
-        className="scroll-up-btn"
-        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-      >
+      <div className="scroll-up-btn" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
         <i className="fa-solid fa-angle-up"></i>
       </div>
+      
       {/* socila media */}
+{/* 
       <div className="socil-0-0">
         <ul>
           <li className="facebook">
@@ -54,9 +53,10 @@ function Home() {
             <i class="fa-brands fa-linkedin"></i>
           </li>
         </ul>
-      </div>
+      </div> */}
 
       {/* ======= */}
+
       <div className="navbar-0">
         <div className="logo">
           <a href="#home">
@@ -84,13 +84,18 @@ function Home() {
           </li>
           <li>
             <a href="#teams" className="menu-btn">
-            Teams
+              Teams
             </a>
           </li>
           <li>
             <a href="#contact" className="menu-btn">
-            Contact
+              Contact
             </a>
+          </li>
+          <li>
+            <Link to="/Projects" className="menu-btn">
+              Projects
+            </Link>
           </li>
         </ul>
         <button
@@ -107,7 +112,7 @@ function Home() {
       <section
         className="home"
         style={{
-          backgroundImage: "url('../image/bg-image-28.jpg')",
+          backgroundImage: "url('../image/bg-image2.jpg')",
         }}
       >
         <div className="max-width">
@@ -118,7 +123,7 @@ function Home() {
               And I'm a{" "}
               <span className="typing">
                 <Typed
-                  strings={["Junior Front End Developer"]}
+                  strings={["Software Engineer"]}
                   typeSpeed={150}
                   backSpeed={50}
                   loop={true}
@@ -129,6 +134,7 @@ function Home() {
           </div>
         </div>
       </section>
+
       {/* About us */}
 
       <section>
@@ -155,7 +161,9 @@ function Home() {
                       ullamco laboris nisi ut aliquip ex ea commodo consequat.
                     </p>
                   </div>
+
                   {/* Skill */}
+
                   <div className="skill">
                     <div className="developer mb-3">Skills</div>
                     <div className="skill-html mb-3">
@@ -254,6 +262,7 @@ function Home() {
       </section>
 
       {/* Team */}
+
       <section>
         <div
           className="container production"
@@ -542,6 +551,7 @@ function Home() {
           </div>
         </div>
       </section>
+
       {/* Footer */}
 
       <div className="fooet" id="contact">
@@ -549,14 +559,14 @@ function Home() {
           <div className="footerpo-s0">
             <div className="conten-0">
               <p>
-              Copyright ©2022 All rights reserved Designed By<span style={{color:"#ef0963"}}> Amruta</span>
+                Copyright ©2022 All rights reserved Designed By<span style={{ color: "#ef0963" }}> Amruta</span>
               </p>
               <ul>
                 <li>
                   <span>
                     <i class="fa-solid fa-envelope"></i>
                   </span>
-                 amrutamiraje2@gmail.com
+                  amrutamiraje2@gmail.com
                 </li>
                 <li>
                   <span>
